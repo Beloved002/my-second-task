@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#5456ad">
+    <h1 style="color: deepskyblue;">Student Registration Form</h1>
+    <form action="/register" method="post">
+        <label  for="fullname" required>Full Name: </label>
+        <input type="text" id="fullname"> <br><br>
+
+        <label for="email"> Email:  </label>
+        <input type="text" id="email"> <br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password"><br><br>
+
+        <label name="male">Male:</label> <input type="radio" id="male">
+        <label name="male">Female:</label> <input type="radio" id="male"> <br><br>
+        
+        <p>Country</p>
+        <select name="country" id="">
+        <option value="country">Nigeria</option>
+        <option value="country">Ghana</option>
+        <option value="country">kenya</option>
+        <option value="country">South Africa</option> 
+        </select>
+        <br>
+        <br>
+        <br>
+
+         
+         <textarea name="aboutMe" id="Aboutme" placeholder="Tell us about yourself..." 
+         style="height: 60%; width: 70%;"> </textarea> <br><br>
+
+        <input type="checkbox"><label for="checkbox" required> "I agree to the terms and conditions"</label> <br><br>
+
+        <button required><a href="#">Submit</a></button>
+
+   </form>
+    <!---   --->
+   <form action="/register" method="post">
+        <h2>Action and method</h2>
+            <table border="5px">
+
+                <tr>
+                    <th>Attribute</th>
+                    <th width="250px">Question</th>
+                    <th>Value in this taks</th>
+                </tr>
+
+                <tr>
+                    <th>Action</th>
+                    <th width="250px">Where should the form go?</th>
+                    <th>Register</th>
+                </tr>
+                
+                <tr>
+                    <th>Method</th>
+                    <th width="250px">HOW should the form data be submitted?</th>
+                    <th>Post</th>
+                </tr>
+            </table>
+
+   </form>
+    <!-- -->
+   <form action="/search" method="get">
+       <h3 style="color: deepskyblue;">Search Form</h3>
+       <input type="text" placeholder="              Search">
+       <button>Search</button> 
+
+   </form>
+</body>
+</html>
