@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="#5456ad">
-    <h1 style="color: deepskyblue;">Student Registration Form</h1>
+<body>
+    <h1>Student Registration Form</h1>
     <form action="/register" method="post">
         <label  for="fullname" required>Full Name: </label>
         <input type="text" id="fullname"> <br><br>
@@ -17,8 +18,10 @@
         <label for="password">Password: </label>
         <input type="password" id="password"><br><br>
 
-        <label name="male">Male:</label> <input type="radio" id="male">
-        <label name="male">Female:</label> <input type="radio" id="male"> <br><br>
+        <label for="gender"  name="male">Male:</label> 
+        <input type="radio" name="gender">
+        <label for="gender" name="male">Female:</label> 
+        <input type="radio" name="gender"> <br><br>
         
         <p>Country</p>
         <select name="country" id="">
@@ -29,7 +32,7 @@
         </select>
         <br>
         <br>
-        <br>
+    
 
          
          <textarea name="aboutMe" id="Aboutme" placeholder="Tell us about yourself..." 
