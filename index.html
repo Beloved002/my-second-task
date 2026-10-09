@@ -4,46 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
 </head>
+
 <body>
     <h1>Student Registration Form</h1>
-    <form >
-        <label for="fullname">Fullname: </label>
+    <form action="/register" method="post">
+        <label  for="fullname" required>Full Name: </label>
         <input type="text" id="fullname"> <br><br>
 
-        <label for="email">Email: </label>
-        <input type="email"> <br><br>
-       
+        <label for="email"> Email:  </label>
+        <input type="text" id="email"> <br><br>
+
         <label for="password">Password: </label>
-        <input type="password" id="password"> <br><br>
+        <input type="password" id="password"><br><br>
 
-        <label for="gender" name="gender">Male: </label>
-        <input type="radio" id="gender" name="gender">
+        <label for="gender"  name="male">Male:</label> 
+        <input type="radio" name="gender">
+        <label for="gender" name="male">Female:</label> 
+        <input type="radio" name="gender"> <br><br>
         
-        <label for="gender" name="gender">Female: </label>
-        <input type="radio" id="gender" name="gender"> <br><br>
-
+        <p>Country</p>
         <select name="country" id="">
-            <option value="country"> Nigeria</option>
-            <option value="country"> Ghana</option>
-            <option value="country"> South Africa </option>
-            <option value="country"> Kenya</option>
+        <option value="country">Nigeria</option>
+        <option value="country">Ghana</option>
+        <option value="country">kenya</option>
+        <option value="country">South Africa</option> 
+        </select>
+        <br>
+        <br>
+    
 
-        </select> <br><br>
+         
+         <textarea name="aboutMe" id="Aboutme" placeholder="Tell us about yourself..." 
+         style="height: 60%; width: 70%;"> </textarea> <br><br>
 
-        <textarea name="" id="">Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Incidunt quisquam sapiente,
-             dicta ipsam, provident velit doloremque amet magnam 
-             expedita doloribus excepturi 
-            magni esse nisi repudiandae architecto. 
-            Cum vero laborum aut?</textarea> <br><br>
+        <input type="checkbox"><label for="checkbox" required> "I agree to the terms and conditions"</label> <br><br>
 
-            <input type="checkbox"> <label for="privacy">"I agree to the 
-                terms and conditions"</label> <br><br>
+        <button required><a href="#">Submit</a></button>
 
-        <button style="width: 100px; height: auto;">Submit</button>
-    </form>
+   </form>
+    <!---   --->
+   <form action="/register" method="post">
+        <h2>Action and method</h2>
 
+        <table border="5px">
 
+                <tr>
+                    <th>Attribute</th>
+                    <th width="250px">Question</th>
+                    <th>Value in this taks</th>
+                </tr>
+
+                <tr>
+                    <th>Action</th>
+                    <th width="250px">Where should the form go?</th>
+                    <th>Register</th>
+                </tr>
+                
+                <tr>
+                    <th>Method</th>
+                    <th width="250px">HOW should the form data be submitted?</th>
+                    <th>Post</th>
+                </tr>
+            </table>
+
+   </form>
+    <!-- -->
+   <form action="/search" method="get">
+       <h3 style="color: deepskyblue;">Search Form</h3>
+       <input type="text" placeholder="              Search">
+       <button>Search</button> 
+
+   </form>
 </body>
 </html>
